@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Heading from './Heading';
 import * as serviceWorker from './serviceWorker';
 
+const fname = "Supreet";
 ReactDOM.render(
-    [<h1> hello woeld</h1>,
-        <p>ideasbysupreet</p>
-        ]
-    ,
+   [ <Heading/>,
+        <p>this is p tag</p>,
+        <p> my first name is {fname}</p>],
+       
+        
+    
   document.getElementById('root')
 );
 
