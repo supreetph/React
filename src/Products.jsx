@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom'
 
 function Products(products) {
     return [
+        <label>Productid:{products.id}</label>,
+        <label>Productid:{products.name}</label>,
+        <label>Productid:{products.cost}</label>
+     
 
-        <label> ProductId : {products.id}</label>,
-        <label> Product Name : {products.name}</label>,
-        <label> Product Cost : {products.cost}</label>,
-        <label> Product Quantity : {products.quantity}</label>
     ]
-
 
     
 }
