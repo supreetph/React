@@ -8,10 +8,13 @@ import Heading from './Heading';
 import * as serviceWorker from './serviceWorker';
 import Customer from './Customer';
 import SimpleForm from './SimpleForm'
+import FireBaseCompo from './FireBaseCompo';
+import ApiForMongoCrud from './ApiForMongoCrud'
 
 
 
-ReactDOM.render(<SimpleForm/>,
+ReactDOM.render([
+    <ApiForMongoCrud/>],
         
     
   document.getElementById('root')
