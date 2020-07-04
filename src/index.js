@@ -9,12 +9,15 @@ import * as serviceWorker from './serviceWorker';
 import Customer from './Customer';
 import SimpleForm from './SimpleForm'
 import FireBaseCompo from './FireBaseCompo';
-import ApiForMongoCrud from './ApiForMongoCrud'
+import ApiForMongoCrud from './ApiForMongoCrud';
+
 
 
 
 ReactDOM.render([
-    <ApiForMongoCrud/>],
+    <h1>hello world</h1>,
+    <ApiForMongoCrud/>
+    ],
         
     
   document.getElementById('root')
