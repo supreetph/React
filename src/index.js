@@ -11,12 +11,13 @@ import SimpleForm from './SimpleForm'
 import FireBaseCompo from './FireBaseCompo';
 import ApiForMongoCrud from './ApiForMongoCrud';
 
-
+import Corona from './Corona';
 
 
 ReactDOM.render([
     <h1>hello world</h1>,
-    <FireBaseCompo/>
+    //<FireBaseCompo/>
+    <Corona/>
    // <ApiForMongoCrud/>
     ],
         

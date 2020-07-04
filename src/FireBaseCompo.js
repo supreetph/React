@@ -9,12 +9,15 @@ import React from 'react';
 
 const FireBaseCompo = () => {
 
-    //const payload = {'Name':'chikalla','Designation':'software engg',Age:25}
-    //axios.post('https://localhost:44352/api/PeopleApi/Post', payload).then((response) => {
-    //    console.log(response)
-    //})
+    const payload = { 'Name': 'chikalla', 'Designation': 'software engg', Age: 25 }
+    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    axios.post('https://localhost:44352/api/PeopleApi/', payload
+    ).then((response) => {
+        console.log(response)
+    })
     axios.get('https://localhost:44352/api/PeopleApi').then(response => {
         console.log(response.data)
+
     })
    // firestore().collection('/People').add({ Name: "paul",Designation:"SE",Age:20 });
     
