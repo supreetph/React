@@ -16,7 +16,8 @@ import ApiForMongoCrud from './ApiForMongoCrud';
 
 ReactDOM.render([
     <h1>hello world</h1>,
-    <ApiForMongoCrud/>
+    <FireBaseCompo/>
+   // <ApiForMongoCrud/>
     ],
         
     
