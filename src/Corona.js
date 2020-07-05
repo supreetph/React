@@ -1,27 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import axios from 'axios';
 
 const Corona = () => {
-    const [Data, setData] = useEffect({ CovidCount: [] });
-    axios.get("https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=Canada",
+    const [arr, setData] = useState([]);
 
-        {
-            'headers': {
-                'x-rapidapi-key': '1bb5dc829fmsh29f8f249d1f16f1p17b980jsnf8ee1cb39407'
-            }
-        }).then(respose => {
-            const info = respose.data;
-            console.log(info.data.covid19Stats[0].confirmed);
-            setData(info.data.covid19Stats[0].confirmed);
-        })
-   
-   // const { Data } = this.state;
+    useEffect(() => {
+        axios.get("https://localhost:44352/api/PeopleApi").then(response => {
+            console.log(response.data);
+            setData(response.data);
+        });
+    }, []);
     return (
-      
-        <div>
-            <h1> Covid-19 Data </h1>
-           
+        <div className="App">
+            <h1>Hello welcome to CodeSandbox</h1>
+            <h2>Start editing to see some magic happen!</h2>
+            <div>
+                <table>
+                    <td>Name</td>
+                    <td>age</td>
+                    <td>Designation</td>
+                    {arr.map(a => {
+                        return [<tr>{a.name}</tr>,
+                        <tr>{a.name}</tr>,]
+                    })}
+                </table>
+            </div>
         </div>
-    )
+    );
 }
 export default Corona;
