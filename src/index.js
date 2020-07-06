@@ -10,6 +10,7 @@ import Customer from './Customer';
 import SimpleForm from './SimpleForm'
 import FireBaseCompo from './FireBaseCompo';
 import ApiForMongoCrud from './ApiForMongoCrud';
+import SimpleFormNew from './SimpleFormNew';
 
 import Corona from './Corona';
 
@@ -17,8 +18,9 @@ import Corona from './Corona';
 ReactDOM.render([
     <h1>hello world</h1>,
     //<FireBaseCompo/>
-    <Corona/>
+    //<Corona/>
    // <ApiForMongoCrud/>
+    <SimpleFormNew/>
     ],
         
     
