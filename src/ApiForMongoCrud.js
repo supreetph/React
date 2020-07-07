@@ -2,12 +2,12 @@ import React from 'react'
 import axios from 'axios'
 
 const ApiForMongoCrud = () => {
-    const payload = {
-        'item': 'headphones1',
-        'cost': '2000',
-        'qty': '200'
+    //const payload = {
+    //    'item': 'headphones1',
+    //    'cost': '2000',
+    //    'qty': '200'
 
-    }
+    //}
     //axios.post('https://localhost:44354/api/ProductApi/', payload).then((response) => {
     //    console.log(response.data)
     //})
